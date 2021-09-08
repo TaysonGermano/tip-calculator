@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="images/logo.svg" alt="SPLITTER" />
+      </div>
+      <div class="container">
+        <div class="left-section section">
+          <div class="content">
+            <div class="row row-1">
+              <div class="handler">
+                <span>Bill</span><span class="error"></span>
+              </div>
+              <div class="field">
+                <img
+                  src="images/icon-dollar.svg"
+                  alt="dollar"
+                  class="icon"
+                /><input
+                  type="text"
+                  placeholder="0"
+                  name="amount"
+                  id="amount"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row row-2">
+              Select Tip %
+              <div class="row-2-1">
+                <button type="button" class="percentage">5%</button>
+                <button type="button" class="percentage">10%</button>
+                <button type="button" class="percentage">15%</button>
+                <button type="button" class="percentage">25%</button>
+                <button type="button" class="percentage">50%</button>
+                <input
+                  type="text"
+                  name="custom"
+                  placeholder="Custom"
+                  id="custom"
+                />
+              </div>
+            </div>
+            <div class="row row-3">
+              <div class="handler">
+                <span>Number of People</span><span class="error"></span>
+              </div>
+              <div class="field">
+                <img
+                  src="images/icon-person.svg"
+                  alt="user"
+                  class="icon"
+                /><input
+                  type="text"
+                  placeholder="0"
+                  name="people"
+                  id="people"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-section section">
+          <div class="row row-1">
+            <div class="text-information">
+              Tip Amount <br /><span>/ person</span>
+            </div>
+            <div class="display-value">
+              $<span class="tip-amount">0.00</span>
+            </div>
+          </div>
+          <div class="row row-2">
+            <div class="text-information">
+              Total <br /><span>/ person</span>
+            </div>
+            <div class="display-value">$<span class="total">0.00</span></div>
+          </div>
+          <div class="row row-3">
+            <button type="button" class="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app/script.js"></script>
+  </body>
+</html>
