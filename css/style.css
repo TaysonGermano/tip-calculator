@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import "general.css";
+@import "variables.css";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+
+/* body flex */
+body {
+  background-color: var(--bckg-color);
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main element styles */
+main {
+  width: 700px;
+  max-width: 100%;
+}
+
+main .logo {
+  text-align: center;
+}
+
+main .container {
+  margin-top: 50px;
+  display: flex;
+  background-color: #fff;
+  padding: 17px;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+/* left and right width */
+.right-section,
+.left-section {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* left section styles */
+.left-section {
+  color: var(--primary-color);
+  margin: 0 15px 0 5px;
+}
+
+.left-section .row {
+  margin: 20px 0;
+}
+
+.left-section .field {
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  padding: 0 7px;
+  border-radius: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+}
+
+.field input {
+  flex-grow: 1;
+  height: 30px;
+}
+
+.row-2-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 0 0 -5px;
+}
+
+.left-section button,
+input#custom {
+  border: 2px solid #fff;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin: 5px;
+  width: 90px;
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.left-section button {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+input#custom::placeholder {
+  text-align: center;
+}
+
+/* Right section styles */
+.right-section {
+  background-color: var(--primary-color);
+  margin: 0 5px 0 15px;
+  padding: 10px 10px 0px 10px;
+}
+
+.right-section .row {
+  display: flex;
+  margin: 30px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-section .display-value {
+  color: var(--active-color);
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.right-section .text-information {
+  color: hsl(0, 0%, 100%);
+}
+
+.right-section .text-information span {
+  color: hsl(0, 0%, 70%);
+}
+
+.row-3 button {
+  flex-grow: 1;
+  padding: 5px 0;
+  margin-top: 60px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: var(--icon-color);
+  color: var(--primary-color);
+}
+
+/* media */
+@media screen and (max-width: 375px) {
+  body {
+    height: auto;
+  }
+  main .container {
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  main .logo {
+    margin-top: 50px;
+  }
+
+  .right-section,
+  .left-section {
+    margin: 0px;
+  }
+
+  .left-section button,
+  input#custom {
+    width: 100px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.handler {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
