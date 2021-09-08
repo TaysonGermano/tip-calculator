@@ -1,18 +1,5 @@
 "use strict";
 
-// Understanding the problem
-// Calculate the tip per person based on the total of bill and the
-// number of people on the table. The calculator should show the how
-// much tip each person should give and also the total + tip each person
-// should pay to sort out the bill.
-
-// Breaking into sub problems
-// 1 - User should input bill and the number of people
-// 2 - When user select the percentage or write a custom percentage, calculator
-// display the result for tip per person and total per person. If step one is
-// empty, then calculator display error
-// 3 - When user resets, calculator should go back to normal status (empy fields)
-
 // get inputs and outputs
 
 //inputs
