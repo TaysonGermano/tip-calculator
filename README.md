@@ -15,10 +15,8 @@
 
 ### Requirements
 
-Users are be able to:
+Users can:
 
-- Enter bill
-- Enter number of people on the table
 - Calculate tip based on a passed percentage
 
 ### Screenshot
@@ -31,15 +29,13 @@ Users are be able to:
 
 ## My process
 
-First step on this app was to understand the requirements and see the design file for to analyze if it would be best to use flexbox or the grid system.
+The first step on this app was to understand the requirements and see the design file to analyze if it would be best to use Flexbox or the grid system.
 
 ### Built with
 
 - HTML5
 - CSS3
-- Flexbox
-- Javascript
-- ES6
+- Javascript (ES6)
 
 ### What I learned
 
